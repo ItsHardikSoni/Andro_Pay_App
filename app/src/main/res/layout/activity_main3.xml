@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-127dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity3"
+        tools:ignore="MissingClass">
+
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_green"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="Andro Pay"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/climage"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:src="@drawable/img_2"
+            app:layout_constraintBottom_toTopOf="@+id/main2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <LinearLayout
+            android:id="@+id/main2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="@color/white_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/tvDC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/climage">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/white_gray"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvImg"
+                    android:layout_width="55dp"
+                    android:contentDescription="img"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_3" />
+
+                <TextView
+                    android:id="@+id/llTvScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvImg2"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:contentDescription="img"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_4" />
+
+                <TextView
+                    android:id="@+id/llTvHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="History"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvImg3"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:contentDescription="img"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_5" />
+
+
+                <TextView
+                    android:id="@+id/llTvProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Products"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvAccounts"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:contentDescription="img"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_31" />
+
+
+                <TextView
+                    android:id="@+id/llTvLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accounts"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="DEALS AND CASHBACK"
+            android:textColor="@color/dark_green"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/main3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main2" />
+
+        <LinearLayout
+            android:id="@+id/main3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="@color/white_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/llMain4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDC">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvImg4"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:contentDescription="img"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_6" />
+
+                <TextView
+                    android:id="@+id/llTvRefer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refer and Earn"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvImg5"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white_gray"
+                    android:contentDescription="img"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_7" />
+
+                <TextView
+                    android:id="@+id/llTvVouchers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Vouchers"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvImg6"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:contentDescription="img"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_8" />
+
+
+                <TextView
+                    android:id="@+id/llTvCashBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cashback"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMain4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/main5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main3">
+
+            <TextView
+                android:id="@+id/tvPromoted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="PROMOTED"
+                android:textColor="@color/dark_green"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdvertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADVERTISEMENT"
+                android:textColor="@color/dark_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/main6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llMain4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="97dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvImg7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/white_gray"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img_9" />
+
+                <TextView
+                    android:id="@+id/llTvLudo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ludo"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:id="@+id/llIvImg8"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_10" />
+
+                <TextView
+                    android:id="@+id/llTvWinzo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="WinZo Rummy"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:backgroundTint="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/llIvImg9"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_12" />
+
+
+                <TextView
+                    android:id="@+id/llTvA23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A23 Poker"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:backgroundTint="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/llIvImg10"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_13" />
+
+                <TextView
+                    android:id="@+id/llTvAirtel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Airtel 5G"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@id/tvInsurance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:backgroundTint="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/llIvImg11"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_14" />
+
+                <TextView
+                    android:id="@+id/llTvAmazomPrime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Amazon Prime"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:backgroundTint="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/llIvImg12"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_15" />
+
+                <TextView
+                    android:id="@+id/llTvAmazon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Amazon Shopping"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:backgroundTint="@color/white_gray"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/llIvImg13"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_33" />
+
+
+                <TextView
+                    android:id="@+id/llTvFlipkart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Flipkart"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:id="@+id/llIvImg14"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_17" />
+
+                <TextView
+                    android:id="@+id/llTvDominos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Dominos"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvInsurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="INSURANCE"
+            android:textColor="@color/dark_green"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/main7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main6" />
+
+        <LinearLayout
+            android:id="@+id/main7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvLoan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvInsurance">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/llIvImg15"
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/img_18" />
+
+                <TextView
+                    android:id="@+id/llTvCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car Insurance"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg16"
+                    android:src="@drawable/img_19" />
+
+                <TextView
+                    android:id="@+id/llTvBike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Bike Insurance"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg17"
+                    android:src="@drawable/img_20" />
+
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/llTvHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health Insurance"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="LOANS AND CREDIT CARDS"
+            android:textColor="@color/dark_green"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/main8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main7" />
+
+        <LinearLayout
+            android:id="@+id/main8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvTicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLoan">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg18"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_21" />
+
+                <TextView
+                    android:id="@+id/llTvBusinessLoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Business Loan"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg19"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_22" />
+
+                <TextView
+                    android:id="@+id/llTvPersonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Personal Loan"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg20"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_23" />
+
+
+                <TextView
+                    android:id="@+id/llTvGold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Gold Loan"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg21"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_24" />
+
+
+                <TextView
+                    android:id="@+id/llTvCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Credit Cards"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="TICKET BOOKING"
+            android:textColor="@color/dark_green"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/main9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main8" />
+
+        <LinearLayout
+            android:id="@+id/main9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/main10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTicket">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg22"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_25" />
+
+                <TextView
+                    android:id="@+id/llTvFlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flight Tickets"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg23"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_26" />
+
+                <TextView
+                    android:id="@+id/llTvBus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Bus Tickets"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg24"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_27" />
+
+
+                <TextView
+                    android:id="@+id/llTvTrain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Train Tickets"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_gray"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main9">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg25"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_28" />
+
+                <TextView
+                    android:id="@+id/llTvMovie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movie Ticket"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg26"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_29" />
+
+                <TextView
+                    android:id="@+id/llTvEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Event Tickets"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:backgroundTint="@color/white_gray"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/llIvImg27"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/img_30" />
+
+                <TextView
+                    android:id="@+id/llTvHotels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotels Booking"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
